@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática de DOM - Desenvolvimento Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOPO DA PÁGINA -->
+    <header class="topo">
+        <h1>Fundação de Ensino de Contagem</h1>
+        <p class="subtitulo">Módulo de JavaScript & DOM</p>
+        <nav>
+            <ul class="navegacao">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Módulos</a></li>
+                <li><a href="#">Suporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ÁREA PRINCIPAL -->
+    <main class="wrapper">
+        
+        <!-- SEÇÃO 1: SELEÇÃO E EVENTOS -->
+        <section class="cartao">
+            <h2>Interatividade com DOM</h2>
+            <p>Parágrafo padrão usado para testes de seleção via script.</p>
+            <p class="texto-foco">Este parágrafo possui uma classe especial de destaque.</p>
+
+            <!-- BLOCOS INTERATIVOS -->
+            <div class="bloco-item" id="item-1">
+                <h3>Bloco 01</h3>
+                <p>Clique aqui para testar a seleção individual.</p>
+            </div>
+
+            <div class="bloco-item" id="item-2">
+                <h3>Bloco 02</h3>
+                <p>Segundo elemento interativo da lista.</p>
+            </div>
+
+            <div class="bloco-item" id="item-3">
+                <h3>Bloco 03</h3>
+                <p>Terceiro elemento para manipulação de classes.</p>
+            </div>
+
+            <!-- AÇÕES -->
+            <div class="grupo-botoes">
+                <button id="btn-destacar">Destacar Todos</button>
+                <button id="btn-limpar">Limpar Seleção</button>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: STACK DE TECNOLOGIAS -->
+        <section class="cartao">
+            <h2>Tecnologias Estudadas</h2>
+            <ul class="lista-tech">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript ES6</li>
+                <li>Node.js</li>
+                <li>Python</li>
+            </ul>
+        </section>
+
+        <!-- SEÇÃO 3: MÍDIA -->
+        <section class="cartao">
+            <h2>Exemplo de Imagem</h2>
+            <div class="quadro-imagem">
+                <img src="https://via.placeholder.com/100" alt="Miniatura de exemplo">
+                <span>imagem teste</span>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 4: CADASTRO -->
+        <section class="cartao">
+            <h2>Formulário de Inscrição</h2>
+            <form>
+                <label for="nome-usuario">Nome Completo</label>
+                <input type="text" id="nome-usuario" placeholder="Ex: Carlos Silva">
+
+                <label for="email-usuario">E-mail de Contato</label>
+                <input type="email" id="email-usuario" placeholder="carlos@email.com">
+
+                <label for="select-curso">Trilha Desejada</label>
+                <select id="select-curso">
+                    <option value="">Escolha uma opção...</option>
+                    <option value="HTML">Fundamentos Web (HTML/CSS)</option>
+                    <option value="JS">Lógica com JavaScript</option>
+                    <option value="Fullstack">Desenvolvimento Fullstack</option>
+                </select>
+
+                <label for="obs">Observações</label>
+                <textarea id="obs" placeholder="Escreva sua dúvida ou sugestão..."></textarea>
+
+                <button type="submit" id="btn-enviar">Cadastrar</button>
+            </form>
+        </section>
+
+        <!-- SEÇÃO 5: LISTAGEM -->
+        <section class="cartao">
+            <h2>Alunos Matriculados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aluno</th>
+                        <th>Idade</th>
+                        <th>Trilha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lucas</td>
+                        <td>21</td>
+                        <td>JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>Beatriz</td>
+                        <td>19</td>
+                        <td>HTML e CSS</td>
+                    </tr>
+                    <tr>
+                        <td>Rafael</td>
+                        <td>24</td>
+                        <td>Fullstack</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>Exercício Prático de Frontend • Manipulação de Elementos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
